@@ -1,0 +1,23 @@
+index:
+  path: /
+  controller: App\Controller\DefaultController::index
+
+shop:
+  path: /shop
+  controller: App\Controller\ShopController::shop
+
+login:
+  path: /login
+  controller: App\Controller\SecurityController::app_login
+
+create:
+  path: /create
+  controller: App\Controller\ShopController::create
+
+delete:
+  path: /delete{id}
+  controller: App\Controller\ShopController::delete
+
+view:
+  path: /shop/view{id}
+  controller: App\Controller\ShopController::view
