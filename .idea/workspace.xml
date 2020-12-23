@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbc2fbd7-763f-4615-92f8-42971070ba15" name="Default Changelist" comment="upload">
+    <list default="true" id="fbc2fbd7-763f-4615-92f8-42971070ba15" name="Default Changelist" comment="stylishing up something">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
@@ -26,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -169,7 +170,7 @@
       <workItem from="1608160272539" duration="18111000" />
       <workItem from="1608325569140" duration="4791000" />
       <workItem from="1608334787134" duration="17104000" />
-      <workItem from="1608743039522" duration="7125000" />
+      <workItem from="1608743039522" duration="9719000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <created>1608408070726</created>
@@ -185,14 +186,33 @@
       <option name="project" value="LOCAL" />
       <updated>1608408245878</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="stylishing up something">
+      <created>1608757067070</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608757067070</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="upload" />
+    <MESSAGE value="stylishing up something" />
+    <option name="LAST_COMMIT_MESSAGE" value="stylishing up something" />
   </component>
 </project>
