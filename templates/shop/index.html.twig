@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ShopController!{% endblock %}
+{% block title %}Shop List{% endblock %}
 
 {% block body %}
 
@@ -30,27 +30,32 @@
             {% endif %}
         </div>
     </nav>
-
     <div class="container" style="margin-top: 25px;">
         <div class="row mb-2">
 
             {% for post in posts %}
-            <div class="col-md-6">
-                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <h3 class="mb-0">{{ post.name }}</h3>
-                        <div class="mb-1 text-muted">{{ post.price }} €</div>
-                        <p class="card-text mb-auto">{{ post.description }}</p>
-                        {% if app.user %}
 
-                        <a href="{{ path('delete', {id: post.id}) }}"><input type="submit" class="btn btn-danger btn-block" style="float:right;" value="Delete"></a>
+            <div class="col-md-6">
+                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white;">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <h3 class="mb-0"><a href="{{ path('view', {id: post.id}) }}" style="text-decoration: none;">{{ post.name }}</a></h3>
+                        <div class="mb-1 text-muted">{{ post.price }} €<span class="lead text-muted"> / piece</span></div>
+                        <div>
+                            <a href="#cart"><input type="submit" class="btn btn-outline-success" value="Add to cart"></a>
+                            <a href="#wishlist" "><input type="submit" class="btn btn-outline-secondary" value="Add to Wishlist"></a>
+                        </div>
+                        {% if app.user %}
+                            <a href="{{ path('delete', {id: post.id}) }}" style="padding-top: 5px;"><input type="submit" class="btn btn-danger btn-block" value="Delete"></a>
                         {% endif %}
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="{{ '/uploads/' ~ post.image}}" class="bd-placeholder-img" width="200" height="200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"/>
+                        <img src="{{ '/uploads/' ~ post.image}}" class="img-responsive" width="200" height="200"/>
                     </div>
                 </div>
-            </div>{% endfor %}
+            </div>
+            {% endfor %}
+
+
 
         </div>
     </div>
