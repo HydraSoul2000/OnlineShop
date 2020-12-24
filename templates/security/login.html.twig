@@ -22,9 +22,6 @@
                     </li>
                 {% endif %}
             </ul>
-            {% if app.user %}
-                <a style="margin-right: 5px; color: white;">Logged in as {{ app.user.username }}!</a><a href="{{ path('app_logout') }}"><button type="button" class="btn btn-outline-light" >Logout</button></a>
-            {% endif %}
         </div>
     </nav>
 <form method="post">

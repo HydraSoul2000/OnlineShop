@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbc2fbd7-763f-4615-92f8-42971070ba15" name="Default Changelist" comment="stylishing up something">
+    <list default="true" id="fbc2fbd7-763f-4615-92f8-42971070ba15" name="Default Changelist" comment="Updated some style;&#10;Added more entity values, for example, as created field, that shows date when post was created, a country field that shows country of origin field for product, brand field that shows it's brand and producttype field where you can choose what type it is, so later it will be possible to filter/sort products by type and other parameters.&#10;Made migrations.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201216233049.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201217082524.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201219002359.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ShopController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PostProductType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PostProductType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/shop/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/create.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/shop/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/shop/view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/view.html.twig" afterDir="false" />
@@ -147,12 +142,15 @@
     <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1ll8MhgRjbg06cCjlDlNLi2Qmeq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -177,7 +175,7 @@
       <workItem from="1608160272539" duration="18111000" />
       <workItem from="1608325569140" duration="4791000" />
       <workItem from="1608334787134" duration="17104000" />
-      <workItem from="1608743039522" duration="17396000" />
+      <workItem from="1608743039522" duration="18666000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <created>1608408070726</created>
@@ -214,7 +212,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608772126666</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated some style;&#10;Added more entity values, for example, as created field, that shows date when post was created, a country field that shows country of origin field for product, brand field that shows it's brand and producttype field where you can choose what type it is, so later it will be possible to filter/sort products by type and other parameters.&#10;Made migrations.">
+      <created>1608779829125</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608779829125</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated some style;&#10;Added more entity values, for example, as created field, that shows date when post was created, a country field that shows country of origin field for product, brand field that shows it's brand and producttype field where you can choose what type it is, so later it will be possible to filter/sort products by type and other parameters.&#10;Made migrations.">
+      <created>1608779931669</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608779931669</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,8 +244,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="upload" />
     <MESSAGE value="stylishing up something" />
-    <option name="LAST_COMMIT_MESSAGE" value="stylishing up something" />
+    <MESSAGE value="Updated some style;&#10;Added more entity values, for example, as created field, that shows date when post was created, a country field that shows country of origin field for product, brand field that shows it's brand and producttype field where you can choose what type it is, so later it will be possible to filter/sort products by type and other parameters.&#10;Made migrations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated some style;&#10;Added more entity values, for example, as created field, that shows date when post was created, a country field that shows country of origin field for product, brand field that shows it's brand and producttype field where you can choose what type it is, so later it will be possible to filter/sort products by type and other parameters.&#10;Made migrations." />
   </component>
 </project>
