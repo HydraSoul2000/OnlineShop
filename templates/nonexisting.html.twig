@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome!{% endblock %}
+
+{% block body %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{{ path('index') }}">OnlineShop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ path('index') }}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('shop') }}">Shop</a>
+                </li>
+                {% if app.user %}
+                    <li class="nav-item ">
+                        <a class="nav-link" href="{{ path('create') }}">Create</a>
+                    </li>
+                {% endif %}
+            </ul>
+            {% if app.user %}
+                <li class="nav-item dropdown" style="list-style: none;">
+                    <a class="dropdown-toggle" style="color: white; text-decoration: none;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ app.user.username }}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{{ path('app_logout') }}">Log Out</a>
+                    </div>
+                </li>
+            {% else %}
+            <a href="{{ path('login') }}"><button type="button" class="btn btn-outline-light" >Login</button></a>
+            {% endif %}
+        </div>
+    </nav>
+
+
+    <style>
+        .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+        .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    </style>
+
+    <div class="example-wrapper">
+        <h1 >You jumped into rabbit hole. :/</h1>
+        <br>
+        <h4>Sadly this page does not exist.</h4>
+    </div>
+
+{% endblock %}

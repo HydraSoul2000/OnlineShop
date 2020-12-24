@@ -2,6 +2,10 @@ index:
   path: /
   controller: App\Controller\DefaultController::index
 
+sorry:
+  path: /sorry
+  controller: App\Controller\DefaultController::sorry
+
 shop:
   path: /shop
   controller: App\Controller\ShopController::shop
