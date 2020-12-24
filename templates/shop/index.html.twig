@@ -24,7 +24,14 @@
                 {% endif %}
             </ul>
             {% if app.user %}
-            <a style="margin-right: 5px; color: white;">Logged in as {{ app.user.username }}!</a><a href="{{ path('app_logout') }}"><button type="button" class="btn btn-outline-light" >Logout</button></a>
+            <li class="nav-item dropdown" style="list-style: none;">
+                <a class="dropdown-toggle" style="color: white; text-decoration: none;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{ app.user.username }}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{{ path('app_logout') }}">Log Out</a>
+                </div>
+            </li>
             {% else %}
                 <a href="{{ path('login') }}"><button type="button" class="btn btn-outline-light" >Login</button></a>
             {% endif %}
@@ -37,9 +44,9 @@
 
             <div class="col-md-6">
                 <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white;">
-                    <div class="col p-4 d-flex flex-column position-static">
+                    <div class="col p-4 d-flex flex-column position-static" {% if app.user == false%}style="margin-top:20px;" {% endif %}>
                         <h3 class="mb-0"><a href="{{ path('view', {id: post.id}) }}" style="text-decoration: none;">{{ post.name }}</a></h3>
-                        <div class="mb-1 text-muted">{{ post.price }} €<span class="lead text-muted"> / piece</span></div>
+                        <div class="mb-1 text-muted">{{ post.price }} €<span class="lead text-muted"> / {% if post.producttype == 'Clothes' or post.producttype == 'Housing' or post.producttype == 'Electronics' %}piece{% elseif post.producttype == "Food" %}kg{% endif %}</span></div>
                         <div>
                             <a href="#cart"><input type="submit" class="btn btn-outline-success" value="Add to cart"></a>
                             <a href="#wishlist" "><input type="submit" class="btn btn-outline-secondary" value="Add to Wishlist"></a>

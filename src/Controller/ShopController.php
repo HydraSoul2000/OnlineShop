@@ -34,8 +34,6 @@ class ShopController extends AbstractController
     {
         $post = new Shop();
 
-        //$post->setCreatedAt(new \DateTime());
-
         $form = $this->createForm(PostProductType::class, $post);
 
         $form->handleRequest($request);
@@ -60,6 +58,7 @@ class ShopController extends AbstractController
 
                 $post->setImage($filename);
             }
+            $post->setCreated(new \DateTime());
 
             $em = $this->getDoctrine()->getManager();
             $em->persist($post);

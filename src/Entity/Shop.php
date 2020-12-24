@@ -23,9 +23,24 @@ class Shop
     private $name;
 
     /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $producttype;
+
+    /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $description;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $country;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $brand;
 
     /**
      * @ORM\Column(type="integer")
@@ -36,6 +51,11 @@ class Shop
      * @ORM\Column(type="string")
      */
     private $image;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    protected $created;
 
     public function getId(): ?int
     {
@@ -86,6 +106,54 @@ class Shop
     public function setImage($image)
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getCountry(): ?string
+    {
+        return $this->country;
+    }
+
+    public function setCountry(?string $country): self
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    public function getBrand(): ?string
+    {
+        return $this->brand;
+    }
+
+    public function setBrand(?string $brand): self
+    {
+        $this->brand = $brand;
+
+        return $this;
+    }
+
+    public function getCreated(): ?\DateTimeInterface
+    {
+        return $this->created;
+    }
+
+    public function setCreated(\DateTimeInterface $created): self
+    {
+        $this->created = $created;
+
+        return $this;
+    }
+
+    public function getProducttype(): ?string
+    {
+        return $this->producttype;
+    }
+
+    public function setProducttype(string $producttype): self
+    {
+        $this->producttype = $producttype;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ShopController!{% endblock %}
+{% block title %}Create new product!{% endblock %}
 
 {% block body %}
 
@@ -31,14 +31,16 @@
         </div>
     </nav>
 
-    <h2 style="margin: 30px 0 30px 0;text-align: center;">Create</h2>
-    <div class="container">
-        {{ form_start(post_form, {'attr': {'id': 'custom_post_form'}}) }}
-        {{ form_widget(post_form) }}
+    <div class="container" style="margin-top: 30px;">
+        <div class="jumbotron">
+            <h2 style="margin-top:-25px; text-align: center;">Create</h2>
+            {{ form_start(post_form, {'attr': {'id': 'custom_post_form'}}) }}
+            {{ form_widget(post_form) }}
 
-        <input type="submit" value="create" class="btn btn-success" style="float:left; margin-top: 30px;">
+            <input type="submit" value="Create" class="btn btn-success" style="margin-top: 30px;">
 
-        {{ form_end(post_form) }}
+            {{ form_end(post_form) }}
+        </div>
     </div>
 
 {% endblock %}

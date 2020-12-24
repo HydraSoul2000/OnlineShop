@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fbc2fbd7-763f-4615-92f8-42971070ba15" name="Default Changelist" comment="stylishing up something" />
+    <list default="true" id="fbc2fbd7-763f-4615-92f8-42971070ba15" name="Default Changelist" comment="stylishing up something">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201216233049.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201217082524.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201219002359.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ShopController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ShopController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PostProductType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PostProductType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shop/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/create.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shop/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/shop/view.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/shop/view.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +177,7 @@
       <workItem from="1608160272539" duration="18111000" />
       <workItem from="1608325569140" duration="4791000" />
       <workItem from="1608334787134" duration="17104000" />
-      <workItem from="1608743039522" duration="10335000" />
+      <workItem from="1608743039522" duration="17396000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <created>1608408070726</created>
@@ -194,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608759608727</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="stylishing up something">
+      <created>1608772126666</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608772126666</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
